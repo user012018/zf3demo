@@ -10,7 +10,6 @@ This sample is based on the Hello World sample and it shows how to:
   * Create repositories
 
 
-
 │   composer.json
 │   composer.lock
 │   composer.phar
