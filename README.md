@@ -10,134 +10,134 @@ This sample is based on the Hello World sample and it shows how to:
   * Create repositories
 
 
-│   composer.json
-│   composer.lock
-│   composer.phar
-│   docker-compose.yml
-│   Dockerfile
-│   LICENSE.md
-│   phpunit.xml.dist
-│   README.md
-│   Vagrantfile
-│   
-├───config
-│   │   application.config.php
-│   │   development.config.php.dist
-│   │   modules.config.php
-│   │   
-│   └───autoload
-│           .gitignore
-│           development.local.php.dist
-│           global.php
-│           local.php.dist
-│           README.md
-│           zend-developer-tools.local-development.php
-│           
-├───data
-│   │   schema.mysql.sql
-│   │   
-│   ├───cache
-│   │       .gitignore
-│   │       
-│   └───Migrations
-│           Version20160901114333.php
-│           Version20160901114938.php
-│           
-├───module
-│   └───Application
-│       ├───config
-│       │       module.config.php
-│       │       
-│       ├───src
-│       │   │   Module.php
-│       │   │   
-│       │   ├───Controller
-│       │   │   │   IndexController.php
-│       │   │   │   PostController.php
-│       │   │   │   
-│       │   │   └───Factory
-│       │   │           IndexControllerFactory.php
-│       │   │           PostControllerFactory.php
-│       │   │           
-│       │   ├───Entity
-│       │   │       Comment.php
-│       │   │       Post.php
-│       │   │       Tag.php
-│       │   │       
-│       │   ├───Form
-│       │   │       CommentForm.php
-│       │   │       PostForm.php
-│       │   │       
-│       │   ├───Repository
-│       │   │       PostRepository.php
-│       │   │       
-│       │   ├───Service
-│       │   │   │   PostManager.php
-│       │   │   │   
-│       │   │   └───Factory
-│       │   │           PostManagerFactory.php
-│       │   │           
-│       │   └───View
-│       │       └───Helper
-│       │               Breadcrumbs.php
-│       │               Menu.php
-│       │               
-│       ├───test
-│       │   └───Controller
-│       │           IndexControllerTest.php
-│       │           
-│       └───view
-│           ├───application
-│           │   ├───index
-│           │   │       about.phtml
-│           │   │       index.phtml
-│           │   │       
-│           │   ├───partial
-│           │   │       paginator.phtml
-│           │   │       
-│           │   └───post
-│           │           add.phtml
-│           │           admin.phtml
-│           │           edit.phtml
-│           │           view.phtml
-│           │           
-│           ├───error
-│           │       404.phtml
-│           │       index.phtml
-│           │       
-│           └───layout
-│                   layout.phtml
-│                   
-└───public
-    │   .htaccess
-    │   index.php
-    │   
-    ├───css
-    │       bootstrap-theme.css
-    │       bootstrap-theme.css.map
-    │       bootstrap-theme.min.css
-    │       bootstrap-theme.min.css.map
-    │       bootstrap.css
-    │       bootstrap.css.map
-    │       bootstrap.min.css
-    │       bootstrap.min.css.map
-    │       style.css
+    │   composer.json    
+    │   composer.lock    
+    │   composer.phar    
+    │   docker-compose.yml    
+    │   Dockerfile    
+    │   LICENSE.md    
+    │   phpunit.xml.dist    
+    │   README.md    
+    │   Vagrantfile    
     │       
-    ├───fonts
-    │       glyphicons-halflings-regular.eot
-    │       glyphicons-halflings-regular.svg
-    │       glyphicons-halflings-regular.ttf
-    │       glyphicons-halflings-regular.woff
-    │       glyphicons-halflings-regular.woff2
-    │       
-    ├───img
-    │       favicon.ico
-    │       zf-logo.png
-    │       
-    └───js
-            bootstrap.js
-            bootstrap.min.js
-            jquery-2.2.4.min.js
+    ├───config    
+    │   │   application.config.php    
+    │   │   development.config.php.dist    
+    │   │   modules.config.php    
+    │   │       
+    │   └───autoload    
+    │           .gitignore    
+    │           development.local.php.dist    
+    │           global.php    
+    │           local.php.dist    
+    │           README.md    
+    │           zend-developer-tools.local-development.php    
+    │               
+    ├───data    
+    │   │   schema.mysql.sql    
+    │   │       
+    │   ├───cache    
+    │   │       .gitignore    
+    │   │           
+    │   └───Migrations    
+    │           Version20160901114333.php    
+    │           Version20160901114938.php    
+    │               
+    ├───module    
+    │   └───Application    
+    │       ├───config    
+    │       │       module.config.php    
+    │       │           
+    │       ├───src    
+    │       │   │   Module.php    
+    │       │   │       
+    │       │   ├───Controller    
+    │       │   │   │   IndexController.php    
+    │       │   │   │   PostController.php    
+    │       │   │   │       
+    │       │   │   └───Factory    
+    │       │   │           IndexControllerFactory.php    
+    │       │   │           PostControllerFactory.php    
+    │       │   │               
+    │       │   ├───Entity    
+    │       │   │       Comment.php    
+    │       │   │       Post.php    
+    │       │   │       Tag.php    
+    │       │   │           
+    │       │   ├───Form    
+    │       │   │       CommentForm.php    
+    │       │   │       PostForm.php    
+    │       │   │           
+    │       │   ├───Repository    
+    │       │   │       PostRepository.php    
+    │       │   │           
+    │       │   ├───Service    
+    │       │   │   │   PostManager.php    
+    │       │   │   │       
+    │       │   │   └───Factory    
+    │       │   │           PostManagerFactory.php    
+    │       │   │               
+    │       │   └───View    
+    │       │       └───Helper    
+    │       │               Breadcrumbs.php    
+    │       │               Menu.php    
+    │       │                   
+    │       ├───test    
+    │       │   └───Controller    
+    │       │           IndexControllerTest.php    
+    │       │               
+    │       └───view    
+    │           ├───application    
+    │           │   ├───index    
+    │           │   │       about.phtml    
+    │           │   │       index.phtml    
+    │           │   │           
+    │           │   ├───partial    
+    │           │   │       paginator.phtml    
+    │           │   │           
+    │           │   └───post    
+    │           │           add.phtml    
+    │           │           admin.phtml    
+    │           │           edit.phtml    
+    │           │           view.phtml    
+    │           │               
+    │           ├───error    
+    │           │       404.phtml    
+    │           │       index.phtml    
+    │           │           
+    │           └───layout    
+    │                   layout.phtml    
+    │                       
+    └───public    
+        │   .htaccess    
+        │   index.php    
+        │       
+        ├───css    
+        │       bootstrap-theme.css    
+        │       bootstrap-theme.css.map    
+        │       bootstrap-theme.min.css    
+        │       bootstrap-theme.min.css.map    
+        │       bootstrap.css    
+        │       bootstrap.css.map    
+        │       bootstrap.min.css    
+        │       bootstrap.min.css.map    
+        │       style.css    
+        │           
+        ├───fonts    
+        │       glyphicons-halflings-regular.eot    
+        │       glyphicons-halflings-regular.svg    
+        │       glyphicons-halflings-regular.ttf    
+        │       glyphicons-halflings-regular.woff    
+        │       glyphicons-halflings-regular.woff2    
+        │           
+        ├───img    
+        │       favicon.ico    
+        │       zf-logo.png    
+        │           
+        └───js    
+                bootstrap.js    
+                bootstrap.min.js    
+                jquery-2.2.4.min.js
 
 
 
